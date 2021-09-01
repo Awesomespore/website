@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	min-height: 20vh;
+	background-color: #87d4d4;
+	/* Centering */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	color: #36423e;
+}
+
+h2 {
+	font-family: 'Roboto Slab', serif;
+}
+
+
+/*Navigation bar*/
+nav {
+	min-height: 10vh;
+	background-color: #00313d;
+	display: flex;
+	flex-direction: row;
+}
+
+/*Navigation buttons*/
+nav a {
+	min-height: 5vh;
+	min-width: 10vh;
+	padding: 5px 10px;
+	margin: 5px;
+	background-color: lightgray;
+	text-decoration: none;
+	color: black;
+	/* Centering */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+/*Make button for current page green*/
+.active-page {
+	background-color: lightgreen;
+}
+
+
+footer {
+	min-height: 10vh;
+	background-color: #87d4d4;
+	color: black;
+	text-align: center;
+	/* Centering */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	/*calc() used so that I can apply the top and bottom paddings without having the page always be at least 20 pixels more than the viewport height*/
+	min-height: calc(60vh - 20px);
+	background-color: darkgray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+section {
+	min-height: 20vh;
+	background-color: white;
+	border: 2px black solid;
+	padding: 10px;
+	margin: 0 10px 10px;
+	border-radius: 5px;
+}
+
+img {
+	max-width: 80vw;
+}
+
+
+/*Section used in the contact page*/
+.tall-section {
+	min-height: 50vh;
+}
+
+/*Styles for code block section*/
+.code-section {
+	display: flex;
+}
+
+
+.section-text {
+	width: 60%;	
+}
+
+.code {
+	width: 40%;
+	background-color: lightgray;
+}
+
+code {
+	font-family: monospace;
+	white-space: pre;
+}
+
+
+/*Code is hidden by default*/
+#code_block {
+	display: none;
+}
+
+
+
+/*Prevent navigation bar from overflowing on smaller screens*/
+@media only screen and (max-width: 600px) {
+	nav {
+		flex-direction: column;
+	}
+	
+}
+
+
+/*Styles that apply to smartphones*/
+/*If the device screen is <= 425 pixels wide, the navbar will be stacked vertically*/
+@media only screen and (max-width: 426px) {
+	.code-section {
+		flex-direction: column;
+	}
+	
+	.section-text {
+		width: initial;
+	}
+
+	.code {
+		width: initial;
+		background-color: lightgray;
+	}
+	
+}
+
+
+
+
+
+
