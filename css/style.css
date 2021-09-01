@@ -106,10 +106,10 @@ img {
 	background-color: lightgray;
 }
 
-code {
+pre {
 	font-family: monospace;
 	white-space: pre;
-	overflow: wrap;
+	overflow: auto;
 }
 
 
