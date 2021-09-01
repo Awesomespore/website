@@ -109,6 +109,7 @@ img {
 code {
 	font-family: monospace;
 	white-space: pre;
+	overflow: wrap;
 }
 
 
