@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>About CSS</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Meta Website</h1>
+		</header>
+		<nav>
+			<!--Active page button is displayed as green instead of gray-->
+			<a href="index.html">Home</a>
+			<a href="html_page.html">HTML</a>
+			<a class="active-page" href="css_page.html">CSS</a>
+			<a href="js_page.html">JS</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+		<main>
+			<section>
+				<h2>What is CSS?</h2>
+				<p>CSS (Cascading stylesheet) is used to change the appearance (styles) of an HTML document. Without it, pages look extremely bland, with a default font, white background, etc, as seen below</p>
+				<img src="images/bland page.png" alt="Unstyled page, white background, default serif font and very basic layout" width="555px">
+			</section>
+			<section class="code-section">
+				<div class="section-text">
+				aaa
+				</div>
+				<div class="code">
+					<button id="code_button" onclick="showCodeBlock()">Expand code</button>
+					<code id="code_block">
+aaa
+					</code>
+				</div>
+			</section>
+		</main>
+		<footer>
+			copyright lol<br>
+			All assets used are my own.
+		</footer>
+		<script src="javascript/javascript.js"></script>
+	</body>
+</html>

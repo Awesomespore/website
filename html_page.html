@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>About HTML</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Meta Website</h1>
+		</header>
+		<nav>
+			<!--Active page button is displayed as green instead of gray-->
+			<a href="index.html">Home</a>
+			<a class="active-page" href="html_page.html">HTML</a>
+			<a href="css_page.html">CSS</a>
+			<a href="js_page.html">JS</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+		<main>
+			<section>
+				<h2>What is HTML?</h2>
+				<p>HTML, or Hypertext Markup Language, is the skeleton of just about any website you've ever seen, including this one.</p>
+				<!--Have 1/3 of width on the right contain a code block-->
+			</section>
+			<section class="code-section">
+				<div class="section-text">
+				<p>"&lt;!DOCTYPE html&gt;" is required on the first line of every HTML document.</p>
+				<p>h</p>
+				</div>
+				<div class="code">
+					<button id="code_button" onclick="showCodeBlock()">Expand code</button>
+					<!--Entities (&lt; and &gt;) used in place of < and > to avoid the browser interpreting them as actual HTML tags-->
+					<!--Furthermore, "tabs" here are two spaces, NOT actual tabs, since actual tabs are too wide-->
+					<code id="code_block">
+&lt;!DOCTYPE html&gt;
+&lt;!--Hi--&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Heading&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;p&gt;Lorem ipsum&lt;/p&gt;
+&lt;/body&gt;
+&lt;footer&gt;
+  (copyright info)
+&lt;/footer&gt;
+&lt;/html&gt;
+					</code>
+				</div>
+			</section>
+		</main>
+		<footer>
+			copyright lol<br>
+			All assets used are my own.
+		</footer>
+		<script src="javascript/javascript.js"></script>
+	</body>
+</html>
